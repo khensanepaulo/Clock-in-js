@@ -12,11 +12,13 @@ body{
     align-items: center;
     min-height: 100vh;
     background: wheat;
-
+    width: auto;
 }
 #clock h1{
+    width: auto;
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
     color: #fff;
     text-align: center;
     margin: 10px 0;
@@ -26,6 +28,7 @@ body{
     font-size: 0.8em;
 }
 #clock #time{
+    width: auto;
     display: flex;
 }
 
@@ -72,4 +75,55 @@ body{
     position:absolute;
     right: 10px;
     bottom: 10px;
+}
+
+@media only screen and (max-width:700px){
+
+    *
+{
+    margin: 6%;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+#foot{
+    display: flex;
+    position:absolute;
+    right:-10px;
+    bottom: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: wheat;
+    width: 100px;
+}
+
+#clock div{ 
+    text-align: center;
+    position: relative; 
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+
+}
+#clock #time div span{
+    position: relative;
+    display: block;
+    color: #fff;
+    width: 90px;
+    height: 95px;
+    background: black;
+    font-size: 3em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+}
+
+
 }
